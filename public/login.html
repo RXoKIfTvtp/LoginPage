@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Web n' Stuff</title>
+		<link rel="stylesheet" href="./shared/main.css">
+		<link rel="stylesheet" href="login.css">
+	</head>
+
+	<body>
+		<div class="login">
+			<span>Login</span>
+			<form action="authenticate.php" method="post">
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+		<div class="message"><a href="register.html">Register</a></div>
+		<div class="message" id="msg">Account created.</div>
+		<div class="message" id="err">Invalid login.</div>
+		<script src="./shared/main.js"></script>
+		<script src="login.js"></script>
+	</body>
+</html>
+
+
